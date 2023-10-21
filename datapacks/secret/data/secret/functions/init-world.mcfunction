@@ -8,10 +8,10 @@ fill ~10 ~-1 ~10 ~-10 ~-1 ~-10 minecraft:dirt_path
 fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:dirt
 
 # Success button
-setblock ~-1 ~ ~ minecraft:green_concrete
+setblock ~-2 ~ ~ minecraft:green_concrete
 
 # Gamble button
 setblock ~ ~ ~ minecraft:yellow_concrete
 
 # Fail button
-setblock ~1 ~ ~ minecraft:red_concrete
+setblock ~2 ~ ~ minecraft:red_concrete
