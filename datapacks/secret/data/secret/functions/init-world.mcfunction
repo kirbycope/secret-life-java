@@ -9,9 +9,12 @@ fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:dirt
 
 # Success button
 setblock ~-2 ~ ~ minecraft:green_concrete
+setblock ~-2 ~1 ~ minecraft:warped_button
 
 # Gamble button
 setblock ~ ~ ~ minecraft:yellow_concrete
+setblock ~ ~1 ~ minecraft:bamboo_button
 
 # Fail button
 setblock ~2 ~ ~ minecraft:red_concrete
+setblock ~2 ~ ~ minecraft:crimson_button
