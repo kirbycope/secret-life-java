@@ -24,14 +24,14 @@ fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:dirt
 # Success button
 setblock ~-2 ~ ~ minecraft:green_concrete
 setblock ~-2 ~1 ~ minecraft:warped_button[face=floor]
-setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run say Success"}
+setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:success"}
 
 # Gamble button
 setblock ~ ~ ~ minecraft:yellow_concrete
 setblock ~ ~1 ~ minecraft:bamboo_button[face=floor]
-setblock ~ ~-1 ~ minecraft:command_block{Command:"say Gamble!"}
+setblock ~ ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:gamble"}
 
 # Fail button
 setblock ~2 ~ ~ minecraft:red_concrete
 setblock ~2 ~1 ~ minecraft:crimson_button[face=floor]
-setblock ~2 ~-1 ~ minecraft:command_block{Command:"say Fail!"}
+setblock ~2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:fail"}
