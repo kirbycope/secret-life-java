@@ -11,6 +11,7 @@ scoreboard objectives add health health
 scoreboard objectives setdisplay list health
 scoreboard objectives add secret dummy
 scoreboard objectives add session trigger
+scoreboard objectives add timer dummy
 
 # Teams
 team add green

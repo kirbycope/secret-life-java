@@ -1,5 +1,6 @@
 clear @a[scores={secret=0}] written_book
 scoreboard players set @s session 0
+tag @a add countdown
 execute as @a[scores={secret=0}] run give @a written_book{pages:['[["Make 3 bad jokes and get NO laughs."]]'],title:"Secret Task",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=1}] run give @a written_book{pages:['[["Get 3 players to gift you their heart"]]'],title:"Secret Task",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=2}] run give @a written_book{pages:['[["Make a pun at every opportunity in a 5 minute conversation, minimum of 3 successful puns"]]'],title:"Secret Task",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}

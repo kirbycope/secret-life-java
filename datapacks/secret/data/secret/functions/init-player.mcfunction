@@ -10,6 +10,7 @@ team join green @s
 
 # Init scoreboard(s)
 scoreboard players enable @a session
+scoreboard players set @s timer 0
 scoreboard players set @s secret -1
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=0}] run scoreboard players set @s secret 0
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=1}] run scoreboard players set @s secret 1
