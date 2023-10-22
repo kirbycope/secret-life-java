@@ -1,5 +1,4 @@
 execute as @a[scores={timer=0}] run scoreboard players set @s timer 1
-execute as @a[scores={timer=0}] run clear written_book
 execute as @a[scores={timer=1}] run title @a title "§cYour secret is..."
 execute as @a[scores={timer=20}] run title @a title "§c3"
 execute as @a[scores={timer=40}] run title @a title "§c2"
