@@ -8,10 +8,10 @@ execute as @e[scores={deaths=2},tag=!death2] run function secret:red
 execute as @a[scores={deaths=3..}] run gamemode spectator @s
 
 # Trigger Session 1
-execute as @a[scores={session=1}] run function secret:session1
-
-# Increment timer if running
-execute as @a[scores={timer=1..}] run scoreboard players add @s timer 1
+execute as @a[scores={session=1}] run tag @s add countdown
 
 # Countdown
 execute as @a[tag=countdown] run function secret:countdown
+
+# Increment timer if running
+execute as @a[scores={timer=1..}] run scoreboard players add @s timer 1
