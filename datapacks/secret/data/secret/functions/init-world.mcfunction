@@ -24,7 +24,7 @@ fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:dirt
 # Success button
 setblock ~-2 ~ ~ minecraft:green_concrete
 setblock ~-2 ~1 ~ minecraft:warped_button[face=floor]
-setblock ~-2 ~-1 ~ minecraft:command_block{Command:"say Success!"}
+setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run say Success"}
 
 # Gamble button
 setblock ~ ~ ~ minecraft:yellow_concrete
