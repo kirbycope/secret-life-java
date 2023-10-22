@@ -45,20 +45,20 @@ setblock ~ ~-1 ~-8 minecraft:lodestone
 setblock ~ ~-1 ~-3 minecraft:lodestone
 
 # Success button
-setblock ~-2 ~ ~ minecraft:green_concrete
-setblock ~-2 ~1 ~ minecraft:warped_button[face=floor]
+setblock ~-2 ~ ~ minecraft:lodestone
+setblock ~-2 ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:success"}
 setblock ~-2 ~-1 ~1 minecraft:reinforced_deepslate
 
-# Gamble button
-setblock ~ ~ ~ minecraft:yellow_concrete
-setblock ~ ~1 ~ minecraft:bamboo_button[face=floor]
-setblock ~ ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:gamble"}
+# Reroll button
+setblock ~ ~ ~ minecraft:lodestone
+setblock ~ ~1 ~ minecraft:polished_blackstone_button[face=floor]
+setblock ~ ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:reroll"}
 setblock ~ ~-1 ~1 minecraft:reinforced_deepslate
 
 # Fail button
-setblock ~2 ~ ~ minecraft:red_concrete
-setblock ~2 ~1 ~ minecraft:crimson_button[face=floor]
+setblock ~2 ~ ~ minecraft:lodestone
+setblock ~2 ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:fail"}
 setblock ~2 ~-1 ~1 minecraft:reinforced_deepslate
 
