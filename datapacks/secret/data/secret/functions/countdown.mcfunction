@@ -6,5 +6,6 @@ execute as @a[scores={timer=40}] run title @a title "§c2"
 execute as @a[scores={timer=60}] run title @a title "§c1"
 execute as @a[scores={session1=1,timer=60}] run function secret:session1
 execute as @a[scores={timer=60}] run tag @s remove countdown
+execute as @a[scores={timer=60}] run tag @s add session1
 
 execute as @a[scores={timer=60}] run scoreboard players set @s timer 0
