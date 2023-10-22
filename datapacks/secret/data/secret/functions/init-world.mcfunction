@@ -49,19 +49,25 @@ setblock ~-2 ~ ~ minecraft:lodestone
 setblock ~-2 ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:success"}
 setblock ~-2 ~-1 ~1 minecraft:reinforced_deepslate
-setblock ~-2 ~ ~1 minecraft:spruce_wall_sign[facing=south]
+#setblock ~-2 ~ ~1 minecraft:spruce_wall_sign[facing=south]
+setblock ~-2 ~ ~1 spruce_wall_sign[facing=south]{front_text:{messages:['["Succeed"]'],has_glowing_text:1}}
+
 
 # Reroll button
 setblock ~ ~ ~ minecraft:lodestone
 setblock ~ ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~ ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:reroll"}
 setblock ~ ~-1 ~1 minecraft:reinforced_deepslate
+#setblock ~ ~ ~1 minecraft:spruce_wall_sign[facing=south]
+setblock ~-2 ~ ~1 spruce_wall_sign[facing=south]{front_text:{messages:['["Reroll for","a harder task"]'],has_glowing_text:1}}
 
 # Fail button
 setblock ~2 ~ ~ minecraft:lodestone
 setblock ~2 ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:fail"}
 setblock ~2 ~-1 ~1 minecraft:reinforced_deepslate
+#setblock ~2 ~ ~1 minecraft:spruce_wall_sign[facing=south]
+setblock ~-2 ~ ~1 spruce_wall_sign[facing=south]{front_text:{messages:['["Fail"]'],has_glowing_text:1}}
 
 #S'more
 setblock ~ ~ ~5 minecraft:dark_oak_wall_sign[facing=north]
