@@ -47,7 +47,7 @@ setblock ~ ~-1 ~-3 minecraft:lodestone
 # Success button
 setblock ~-3 ~ ~ minecraft:lodestone
 setblock ~-3 ~1 ~ minecraft:polished_blackstone_button[face=floor]
-setblock ~-3 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:success"}
+setblock ~-3 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1,nbt={Inventory:[{id:'minecraft:written_book'}]}] run function secret:success"}
 setblock ~-3 ~-1 ~1 minecraft:reinforced_deepslate
 setblock ~-3 ~ ~1 spruce_wall_sign[facing=south]{front_text:{has_glowing_text:1b,messages:['{"text":"Succeed"}','{"text":""}','{"text":""}','{"text":""}']}} replace
 
