@@ -1,4 +1,5 @@
 gamerule commandBlockOutput false
+gamerule naturalRegeneration false 
 
 # World border centered around spawn
 worldborder center ~ ~
@@ -6,6 +7,8 @@ worldborder set 256 0
 
 # Scoreboard(s)
 scoreboard objectives add deaths deathCount
+scoreboard objectives add health health
+scoreboard objectives setdisplay list health
 
 # Teams
 team add green
