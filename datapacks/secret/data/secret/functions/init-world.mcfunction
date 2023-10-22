@@ -49,7 +49,7 @@ setblock ~-2 ~ ~ minecraft:lodestone
 setblock ~-2 ~1 ~ minecraft:polished_blackstone_button[face=floor]
 setblock ~-2 ~-1 ~ minecraft:command_block{Command:"execute as @a[limit=1] run function secret:success"}
 setblock ~-2 ~-1 ~1 minecraft:reinforced_deepslate
-setblock ~-2 ~ ~1 minecraft:spruce_wall_sign[facing=north]
+setblock ~-2 ~ ~1 minecraft:spruce_wall_sign[facing=south]
 
 # Reroll button
 setblock ~ ~ ~ minecraft:lodestone
