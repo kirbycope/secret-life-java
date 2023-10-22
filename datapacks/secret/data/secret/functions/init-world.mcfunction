@@ -10,6 +10,7 @@ scoreboard objectives add deaths deathCount
 scoreboard objectives add health health
 scoreboard objectives setdisplay list health
 scoreboard objectives add secret dummy
+scoreboard objectives add session trigger
 
 # Teams
 team add green

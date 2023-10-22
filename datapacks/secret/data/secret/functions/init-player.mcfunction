@@ -9,6 +9,7 @@ effect give @s minecraft:instant_health 1 9 true
 team join green @s
 
 # Init scoreboard(s)
+scoreboard players enable @a session
 scoreboard players set @s secret -1
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=0}] run scoreboard players set @s secret 0
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=1}] run scoreboard players set @s secret 1
@@ -29,4 +30,4 @@ execute as @s[scores={secret=-1}] unless entity @a[scores={secret=15}] run score
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=16}] run scoreboard players set @s secret 16
 
 # Give the host the starting item
-execute as @e[scores={secret=0}] run give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"function secret/session1"}}']} 1
+execute as @e[scores={secret=0}] run give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session add 1"}}']} 1
