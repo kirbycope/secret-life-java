@@ -26,8 +26,8 @@ team modify red friendlyFire true
 
 # Starting Platform
 fill ~10 ~ ~10 ~-10 ~10 ~-10 minecraft:air
-fill ~10 ~-1 ~10 ~-10 ~-1 ~-10 minecraft:stone
-fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:dirt
+fill ~10 ~-1 ~10 ~-10 ~-1 ~-10 minecraft:gravel
+fill ~10 ~-2 ~10 ~-10 ~-10 ~-10 minecraft:stone
 
 # Loot area
 fill ~-2 ~-1 ~-3 ~2 ~-1 ~-7 minecraft:stone_slab
