@@ -9,7 +9,7 @@ effect give @s minecraft:instant_health 1 9 true
 team join green @s
 
 # Init scoreboard(s)
-scoreboard players enable @a session
+scoreboard players enable @a session1
 scoreboard players set @s timer 0
 scoreboard players set @s secret -1
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=0}] run scoreboard players set @s secret 0
