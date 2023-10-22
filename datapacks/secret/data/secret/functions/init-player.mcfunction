@@ -29,4 +29,4 @@ execute as @s[scores={secret=-1}] unless entity @a[scores={secret=15}] run score
 execute as @s[scores={secret=-1}] unless entity @a[scores={secret=16}] run scoreboard players set @s secret 16
 
 # Give the host the starting item
-execute as @e[scores={secret=0}] run give @p written_book{pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"function secret:session1"}}'],title:"Session 1",author:Kirbycope,display:{Lore:["Start Session 1!"]}}
+execute as @e[scores={secret=0}] run give @a written_book{pages:['[["",{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"function secret/session1"}},"<","< ","<","<"]]'],title:"Start Session 1",author:Kirbycope,generation:0}
