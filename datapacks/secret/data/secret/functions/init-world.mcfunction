@@ -48,7 +48,6 @@ setblock ~-2 ~-1 ~-7 minecraft:lodestone
 setblock ~ ~-1 ~-7 minecraft:stone_bricks
 setblock ~2 ~-1 ~-7 minecraft:lodestone
 setblock ~ ~-1 ~-8 minecraft:lodestone
-setblock ~ ~-1 ~-3 minecraft:lodestone
 
 # Success button
 setblock ~-3 ~ ~ minecraft:lodestone
