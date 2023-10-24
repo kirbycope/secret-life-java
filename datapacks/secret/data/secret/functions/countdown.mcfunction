@@ -8,12 +8,14 @@ execute as @a[scores={session1=1,timer=80}] run function secret:session1
 execute as @a[scores={timer=80}] run tag @s remove countdown
 execute as @a[scores={timer=80}] run tag @s add session1
 
-# Particle effect
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~-1 ~3 ~-1
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~ ~3 ~-1
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~1 ~3 ~-1
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~-1 ~3 ~
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~ ~3 ~
 execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~1 ~3 ~
-execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~2 ~3 ~
-execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~3 ~3 ~
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~-1 ~3 ~1
 execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~ ~3 ~1
-execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~ ~3 ~2
-execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~ ~3 ~3
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run summon experience_orb ~1 ~3 ~1
 
 execute as @a[scores={timer=80}] run scoreboard players set @s timer 0
