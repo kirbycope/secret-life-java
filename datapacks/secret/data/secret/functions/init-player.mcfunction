@@ -11,6 +11,9 @@ team join green @s
 # Init scoreboard(s)
 scoreboard players enable @a session1
 scoreboard players set @s timer 0
+scoreboard players set @s s1fail 0
+scoreboard players set @s s1reroll 0
+scoreboard players set @s s1success 0
 scoreboard players set @s secret -1
 execute as @s run function secret:random
 
