@@ -1,4 +1,4 @@
-clear @s written_book
+clear @s written_book{title:"Secret Task"}
 
 summon minecraft:item ~3 ~3 ~-5 {Item:{id:"minecraft:diamond",Count:1b}}
 summon minecraft:item ~3 ~3.5 ~-5 {Item:{id:"minecraft:lingering_potion{Potion:'minecraft:long_invisibility'}",Count:2b}}
