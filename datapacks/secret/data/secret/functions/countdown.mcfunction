@@ -7,5 +7,5 @@ execute as @a[scores={timer=80}] run title @a clear
 execute as @a[scores={session1=1,timer=80}] run function secret:session1
 execute as @a[scores={timer=80}] run tag @s remove countdown
 execute as @a[scores={timer=80}] run tag @s add session1
-execute as @a[scores={timer=80}] run execute at @e[tag=init] particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
+execute as @a[scores={timer=80}] run execute at @e[tag=init] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
 execute as @a[scores={timer=80}] run scoreboard players set @s timer 0
