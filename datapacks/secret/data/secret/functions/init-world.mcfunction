@@ -8,6 +8,7 @@ worldborder set 256 0
 # Scoreboard(s)
 scoreboard objectives add deaths deathCount
 scoreboard objectives add health health
+scoreboard objectives add random dummy
 scoreboard objectives add secret dummy
 scoreboard objectives add session1 trigger
 scoreboard objectives add timer dummy
