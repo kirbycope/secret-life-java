@@ -14,5 +14,5 @@ scoreboard players set @s timer 0
 scoreboard players set @s secret -1
 execute as @s run function secret:random
 
-# Give the host the starting item
-execute as @e[scores={secret=0}] run give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session1 add 1"}}']} 1
+# Give the player the starting item
+give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session1 add 1"}}']}
