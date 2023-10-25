@@ -1,5 +1,4 @@
 execute as @a[scores={timer=0}] run scoreboard players set @s timer 1
-execute as @a[scores={timer=0}] run clear @p written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session1 add 1"}}']}
 execute as @a[scores={timer=1}] run title @a title "§cYour secret is..."
 execute as @a[scores={timer=20}] run title @a title "§c3"
 execute as @a[scores={timer=40}] run title @a title "§c2"
