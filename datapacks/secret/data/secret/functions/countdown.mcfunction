@@ -1,6 +1,4 @@
 execute as @a[scores={timer=0}] run scoreboard players set @s timer 1
-execute as @a[scores={timer=1}] run clear @s written_book{title:"Start Session 1"}
-execute as @a[scores={timer=1}] run clear @s written_book{title:"Start Session 2"}
 execute as @a[scores={timer=1}] run title @a title "§cYour secret is..."
 execute as @a[scores={timer=20}] run title @a title "§c3"
 execute as @a[scores={timer=20}] run playsound ui.button.click block @s ~ ~ ~
