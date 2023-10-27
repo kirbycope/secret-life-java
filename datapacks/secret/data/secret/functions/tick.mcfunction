@@ -7,8 +7,9 @@ execute as @e[scores={deaths=1},tag=!death1] run function secret:yellow
 execute as @e[scores={deaths=2},tag=!death2] run function secret:red
 execute as @a[scores={deaths=3..}] run gamemode spectator @s
 
-# Trigger Session 1
+# Trigger Session
 execute as @a[scores={session1=1},tag=!session1] run tag @s add countdown
+execute as @a[scores={session2=1},tag=!session2] run tag @s add countdown
 
 # Countdown
 execute as @a[tag=countdown] run function secret:countdown

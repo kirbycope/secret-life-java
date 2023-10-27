@@ -12,8 +12,12 @@ scoreboard objectives add random dummy
 scoreboard objectives add s1fail dummy
 scoreboard objectives add s1reroll dummy
 scoreboard objectives add s1success dummy
+scoreboard objectives add s2fail dummy
+scoreboard objectives add s2reroll dummy
+scoreboard objectives add s2success dummy
 scoreboard objectives add secret dummy
 scoreboard objectives add session1 trigger
+scoreboard objectives add session2 trigger
 scoreboard objectives add timer dummy
 
 # Teams
