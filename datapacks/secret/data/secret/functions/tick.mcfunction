@@ -14,5 +14,8 @@ execute as @a[scores={session2=1},tag=!session2] run tag @s add countdown
 # Countdown
 execute as @a[tag=countdown] run function secret:countdown
 
+# Success
+execute as @e[tag=success] run function secret:success
+
 # Increment timer if running
 execute as @a[scores={timer=1..}] run scoreboard players add @s timer 1
