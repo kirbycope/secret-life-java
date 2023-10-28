@@ -3,7 +3,7 @@ gamerule naturalRegeneration false
 
 # World border centered around spawn
 worldborder center ~ ~
-worldborder set 256 0
+worldborder set 700 0
 
 # Scoreboard(s)
 scoreboard objectives add deaths deathCount
