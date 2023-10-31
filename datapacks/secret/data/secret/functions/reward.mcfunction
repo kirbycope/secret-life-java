@@ -1,4 +1,5 @@
 execute as @a[scores={timer=0},tag=reward] run scoreboard players set @s timer 1
+execute as @a[scores={timer=1..30}] run particle minecraft:dust 0 1 0 1 ~ ~5 ~-5 0.1 0.1 0.1 0.5 8 normal
 # Normal rewards
 execute as @s[scores={timer=5,health=60..}] run summon minecraft:item ~ ~5 ~-5 {Item:{id:"minecraft:ancient_debris",Count:1b}}
 execute as @s[scores={timer=5,health=60..}] run playsound minecraft:entity.item.pickup ambient @a ~ ~ ~
