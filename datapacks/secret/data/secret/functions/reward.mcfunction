@@ -13,4 +13,5 @@ execute as @s[scores={timer=30},tag=10hearts] run effect give @s instant_health 
 execute as @s[scores={timer=30},tag=10hearts] run tag @s remove 10hearts
 execute as @s[scores={timer=30},tag=20hearts] run effect give @s instant_health 10 0 true
 execute as @s[scores={timer=30},tag=20hearts] run tag @s remove 20hearts
+execute as @a[scores={timer=30}] run tag @s remove reward
 execute as @a[scores={timer=30}] run scoreboard players set @s timer 0
