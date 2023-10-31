@@ -14,8 +14,8 @@ execute as @a[scores={session2=1},tag=!session2] run tag @s add countdown
 # Countdown
 execute as @a[tag=countdown] run function secret:countdown
 
-# Failure
-execute as @e[tag=failure] run function secret:failure
+# Fail
+execute as @e[tag=fail] run function secret:fail
 
 # Success
 execute as @e[tag=success] run function secret:success
