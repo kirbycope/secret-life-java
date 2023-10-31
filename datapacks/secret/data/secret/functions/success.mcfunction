@@ -7,3 +7,4 @@ execute as @s[scores={timer=60,s1fail=0,s1success=0},tag=session1] run function 
 execute as @s[scores={timer=60,s2fail=0,s2success=0},tag=session2] run function secret:success2
 execute as @a[scores={timer=60}] run tag @s remove success
 execute as @a[scores={timer=60}] run scoreboard players set @s timer 0
+# playsound minecraft:entity.item.pickup ambient @s ~ ~ ~ 10 1
