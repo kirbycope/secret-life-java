@@ -34,8 +34,8 @@ execute as @s[scores={timer=50,health=42..}] run playsound minecraft:entity.item
 
 # Give Hearts
 execute as @s[scores={timer=60,health=..23},tag=20hearts] run title @s title "§a+20 Hearts"
-execute as @s[scores={timer=60,health=24..23},tag=20hearts] run effect give @s instant_health 10 0 true
-execute as @s[scores={timer=60,health=24..27},tag=20hearts] run title @s title "§a+18 Hearts"
+execute as @s[scores={timer=60,health=20..23},tag=20hearts] run effect give @s instant_health 10 0 true
+execute as @s[scores={timer=60,health=20..27},tag=20hearts] run title @s title "§a+18 Hearts"
 execute as @s[scores={timer=60,health=24..27},tag=20hearts] run effect give @s instant_health 9 0 true
 execute as @s[scores={timer=60,health=28..31},tag=20hearts] run title @s title "§a+16 Hearts"
 execute as @s[scores={timer=60,health=28..31},tag=20hearts] run effect give @s instant_health 8 0 true
