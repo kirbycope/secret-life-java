@@ -17,6 +17,9 @@ execute as @a[tag=countdown] run function secret:countdown
 # Fail
 execute as @e[tag=fail] run function secret:fail
 
+# Reroll
+execute as @e[tag=reroll] run function secret:reroll
+
 # Reward
 execute as @e[tag=reward] run function secret:reward
 
