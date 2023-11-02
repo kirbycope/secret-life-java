@@ -5,5 +5,6 @@ execute as @a[scores={timer=20}] run title @a title "§aThe risk is great"
 execute as @a[scores={timer=40}] run title @a title "§eLet me open the door"
 execute as @a[scores={timer=60}] run title @a title "§cAccept your fate"
 execute as @s[scores={timer=60,s1fail=0,s1success=0},tag=session1] run function secret:reroll1
+execute as @a[scores={timer=60}] run execute at @e[tag=countdown] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
 execute as @a[scores={timer=60}] run tag @s remove reroll
 execute as @a[scores={timer=60}] run scoreboard players set @s timer 0

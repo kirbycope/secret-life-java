@@ -1,6 +1,6 @@
 execute as @a[scores={timer=0},tag=reward] run scoreboard players set @s timer 1
 execute as @a[scores={timer=1..30}] run particle minecraft:dust 0 1 0 1 ~ ~5 ~-5 0.1 0.1 0.1 0.5 8 normal
-## Normal rewards
+
 # Player has 30+ hearts
 execute as @s[scores={timer=5,health=60..}] run summon minecraft:item ~ ~5 ~-5 {Item:{id:"minecraft:ancient_debris",Count:1b}}
 execute as @s[scores={timer=5,health=60..}] run playsound minecraft:entity.item.pickup ambient @a ~ ~ ~
@@ -31,22 +31,28 @@ execute as @s[scores={timer=45,health=44..}] run playsound minecraft:entity.item
 # Player has 21 hearts
 execute as @s[scores={timer=50,health=42..}] run summon item ~ ~5 ~-5 {Item:{id:"minecraft:iron_block",Count:1b}}
 execute as @s[scores={timer=50,health=42..}] run playsound minecraft:entity.item.pickup ambient @a ~ ~ ~
-# Normal hearts
-execute as @s[scores={timer=60,health=..43},tag=10hearts] run title @s title "§a+10 Hearts"
-execute as @s[scores={timer=60,health=..43},tag=10hearts] run effect give @s instant_health 5 0 true
-execute as @s[scores={timer=60,health=44..47},tag=10hearts] run title @s title "§a+8 Hearts"
-execute as @s[scores={timer=60,health=44..47},tag=10hearts] run effect give @s instant_health 4 0 true
-execute as @s[scores={timer=60,health=48..51},tag=10hearts] run title @s title "§a+6 Hearts"
-execute as @s[scores={timer=60,health=48..51},tag=10hearts] run effect give @s instant_health 3 0 true
-execute as @s[scores={timer=60,health=52..55},tag=10hearts] run title @s title "§a+4 Hearts"
-execute as @s[scores={timer=60,health=52..55},tag=10hearts] run effect give @s instant_health 2 0 true
-execute as @s[scores={timer=60,health=56..59},tag=10hearts] run title @s title "§a+2 Hearts"
-execute as @s[scores={timer=60,health=56..59},tag=10hearts] run effect give @s instant_health 1 0 true
 
-# Rereoll rewards
-# Reroll hearts
-#execute as @s[scores={timer=30},tag=20hearts] run effect give @s instant_health 10 0 true
-#execute as @s[scores={timer=30},tag=20hearts] run tag @s remove 20hearts
+# Give Hearts
+execute as @s[scores={timer=60,health=..23},tag=20hearts] run title @s title "§a+20 Hearts"
+execute as @s[scores={timer=60,health=24..23},tag=20hearts] run effect give @s instant_health 10 0 true
+execute as @s[scores={timer=60,health=24..27},tag=20hearts] run title @s title "§a+18 Hearts"
+execute as @s[scores={timer=60,health=24..27},tag=20hearts] run effect give @s instant_health 9 0 true
+execute as @s[scores={timer=60,health=28..31},tag=20hearts] run title @s title "§a+16 Hearts"
+execute as @s[scores={timer=60,health=28..31},tag=20hearts] run effect give @s instant_health 8 0 true
+execute as @s[scores={timer=60,health=32..35},tag=20hearts] run title @s title "§a+14 Hearts"
+execute as @s[scores={timer=60,health=32..35},tag=20hearts] run effect give @s instant_health 7 0 true
+execute as @s[scores={timer=60,health=36..39},tag=20hearts] run title @s title "§a+12 Hearts"
+execute as @s[scores={timer=60,health=36..39},tag=20hearts] run effect give @s instant_health 6 0 true
+execute as @s[scores={timer=60,health=..43}] run title @s title "§a+10 Hearts"
+execute as @s[scores={timer=60,health=..43}] run effect give @s instant_health 5 0 true
+execute as @s[scores={timer=60,health=44..47}] run title @s title "§a+8 Hearts"
+execute as @s[scores={timer=60,health=44..47}] run effect give @s instant_health 4 0 true
+execute as @s[scores={timer=60,health=48..51}] run title @s title "§a+6 Hearts"
+execute as @s[scores={timer=60,health=48..51}] run effect give @s instant_health 3 0 true
+execute as @s[scores={timer=60,health=52..55}] run title @s title "§a+4 Hearts"
+execute as @s[scores={timer=60,health=52..55}] run effect give @s instant_health 2 0 true
+execute as @s[scores={timer=60,health=56..59}] run title @s title "§a+2 Hearts"
+execute as @s[scores={timer=60,health=56..59}] run effect give @s instant_health 1 0 true
 
 execute as @a[scores={timer=60}] run tag @s remove reward
 execute as @a[scores={timer=60}] run scoreboard players set @s timer 0
