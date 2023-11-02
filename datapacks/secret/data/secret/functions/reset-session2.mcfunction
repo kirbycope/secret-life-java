@@ -8,3 +8,4 @@ tag @a remove fail
 tag @a remove reward
 tag @a remove success
 tag @a remove session2
+give @s written_book{display:{Name:'{"text":"Start Session 2"}',Lore:['{"text":"Start Session 2"}']},title:"Start Session 2",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 2","clickEvent":{"action":"run_command","value":"/trigger session2 add 1"}}']}
