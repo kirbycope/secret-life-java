@@ -1,5 +1,5 @@
-execute as @a[scores={timer=0},tag=reward] run scoreboard players set @s timer 1
-execute as @a[scores={timer=1..30}] run particle minecraft:dust 0 1 0 1 ~ ~5 ~-5 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=0},tag=reward] run scoreboard players set @s timer 1
+execute as @s[scores={timer=1..30}] run particle minecraft:dust 0 1 0 1 ~ ~5 ~-5 0.1 0.1 0.1 0.5 8 normal
 
 # Player has 30+ hearts
 execute as @s[scores={timer=5,health=60..}] run summon minecraft:item ~ ~5 ~-5 {Item:{id:"minecraft:ancient_debris",Count:1b}}
@@ -54,5 +54,5 @@ execute as @s[scores={timer=60,health=52..55}] run effect give @s instant_health
 execute as @s[scores={timer=60,health=56..59}] run title @s title "§a+2 Hearts"
 execute as @s[scores={timer=60,health=56..59}] run effect give @s instant_health 1 0 true
 
-execute as @a[scores={timer=60}] run tag @s remove reward
-execute as @a[scores={timer=60}] run scoreboard players set @s timer 0
+execute as @s[scores={timer=60}] run tag @s remove reward
+execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
