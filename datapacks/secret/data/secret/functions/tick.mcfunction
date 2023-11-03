@@ -8,8 +8,11 @@ execute as @e[scores={deaths=2},tag=!death2] run function secret:red
 execute as @a[scores={deaths=3..}] run gamemode spectator @s
 
 # Trigger Session
+execute as @e[scores={session1=1}] run scoreboard players set @a session1 1
 execute as @e[scores={session1=1},tag=!session1] run tag @s add countdown
+execute as @e[scores={session2=}] run scoreboard players set @a session2 1
 execute as @e[scores={session2=1},tag=!session2] run tag @s add countdown
+execute as @e[scores={session3=1}] run scoreboard players set @a session3 1
 execute as @e[scores={session3=1},tag=!session3] run tag @s add countdown
 
 # Countdown
