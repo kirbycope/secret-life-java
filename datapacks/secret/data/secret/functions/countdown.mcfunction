@@ -7,8 +7,8 @@ execute as @s[scores={timer=40}] run playsound ui.button.click block @s ~ ~ ~
 execute as @s[scores={timer=60}] run title @a title "§c1"
 execute as @s[scores={timer=60}] run playsound ui.button.click block @s ~ ~ ~
 execute as @s[scores={timer=80}] run title @a clear
-execute as @s[scores={timer=80,session1=1}] run function secret:session1
-execute as @s[scores={timer=80,session1=1,session2=1}] run function secret:session2
+execute as @s[scores={timer=80,session1=1,session2=0,session3=0}] run function secret:session1
+execute as @s[scores={timer=80,session1=1,session2=1,session3=0}] run function secret:session2
 execute as @s[scores={timer=80,session1=1,session2=1,session3=1}] run function secret:session3
 execute as @s[scores={timer=80}] run execute at @e[tag=countdown] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
 execute as @s[scores={timer=80}] run tag @s remove countdown
