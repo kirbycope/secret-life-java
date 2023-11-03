@@ -1,4 +1,5 @@
 execute as @a run clear @s written_book{title:"Start Session 1"}
+execute store result score @a secret run random roll 0..16
 execute as @a[scores={secret=0}] run give @s written_book{pages:['[["Make 3 bad jokes and get NO laughs."]]'],title:"Secret Task 1",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=1}] run give @s written_book{pages:['[["Get 3 players to gift you their heart."]]'],title:"Secret Task 1",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=2}] run give @s written_book{pages:['[["Make a pun at every opportunity in a 5 minute conversation, minimum of 3 successful puns."]]'],title:"Secret Task 1",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}

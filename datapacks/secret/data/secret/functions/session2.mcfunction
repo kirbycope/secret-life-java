@@ -1,4 +1,5 @@
 execute as @a run clear @s written_book{title:"Start Session 2"}
+execute store result score @a secret run random roll 0..16
 execute as @a[scores={secret=0}] run give @s written_book{pages:['[["Tell a story and get someone to leave before you finish it."]]'],title:"Secret Task 2",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=1}] run give @s written_book{pages:['[["Don’t call mobs by their names for 30 minutes."]]'],title:"Secret Task 2",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}
 execute as @a[scores={secret=2}] run give @s written_book{pages:['[["Jumpscare another player."]]'],title:"Secret Task 2",author:Kirbycope,generation:0,display:{Name:'["",{"text":"Secret Task","italic":false,"color":"dark_red"}]',Lore:['["",{"text":"Keep it secret, keep it safe!","italic":false}]']},Enchantments:[{}]}

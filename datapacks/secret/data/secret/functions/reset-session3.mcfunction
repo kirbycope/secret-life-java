@@ -3,7 +3,6 @@ scoreboard players set @a timer 0
 scoreboard players set @a s3fail 0
 scoreboard players set @a s3reroll 0
 scoreboard players set @a s3success 0
-execute store result score @a secret run random roll 0..16
 tag @a remove fail
 tag @a remove reward
 tag @a remove success
