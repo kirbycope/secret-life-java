@@ -10,7 +10,7 @@ execute as @a[scores={deaths=3..}] run gamemode spectator @s
 # Trigger Session
 execute as @e[scores={session1=1}] run trigger session1 set 1
 execute as @e[scores={session1=1},tag=!session1] run tag @s add countdown
-execute as @e[scores={session2=}] run trigger session2 set 1
+execute as @e[scores={session2=1}] run trigger session2 set 1
 execute as @e[scores={session2=1},tag=!session2] run tag @s add countdown
 execute as @e[scores={session3=1}] run trigger session3 set 1
 execute as @e[scores={session3=1},tag=!session3] run tag @s add countdown
