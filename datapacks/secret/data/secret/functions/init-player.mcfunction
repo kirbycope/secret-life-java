@@ -11,6 +11,7 @@ team join green @s
 # Init scoreboard(s)
 scoreboard players enable @a session1
 scoreboard players enable @a session2
+scoreboard players enable @a session3
 scoreboard players set @s timer 0
 scoreboard players set @s s1fail 0
 scoreboard players set @s s1reroll 0
