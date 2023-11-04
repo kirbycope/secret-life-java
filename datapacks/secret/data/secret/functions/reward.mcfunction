@@ -94,4 +94,6 @@ execute as @s[scores={timer=60,health=56..59}] run title @s title "§a+2 Hearts"
 execute as @s[scores={timer=60,health=56..59}] run effect give @s instant_health 1 0 true
 
 execute as @s[scores={timer=60}] run tag @s remove reward
+execute as @s[scores={timer=60}] run tag @s remove 10hearts
+execute as @s[scores={timer=60}] run tag @s remove 20hearts
 execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
