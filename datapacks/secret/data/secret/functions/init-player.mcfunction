@@ -9,9 +9,9 @@ effect give @s minecraft:instant_health 1 9 true
 team join green @s
 
 # Init scoreboard(s)
-scoreboard players enable @a session1
-scoreboard players enable @a session2
-scoreboard players enable @a session3
+scoreboard players enable @s session1
+scoreboard players enable @s session2
+scoreboard players enable @s session3
 scoreboard players set @s timer 0
 scoreboard players set @s s1fail 0
 scoreboard players set @s s1reroll 0
@@ -22,7 +22,6 @@ scoreboard players set @s s2success 0
 scoreboard players set @s s3fail 0
 scoreboard players set @s s3reroll 0
 scoreboard players set @s s3success 0
-execute store result score @s secret run random roll 0..16
 
 # Give the player the starting item(s)
 give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Kirbycope",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session1 add 1"}}']}
