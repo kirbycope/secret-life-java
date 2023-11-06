@@ -10,6 +10,6 @@ execute as @s[scores={timer=80}] run title @s clear
 execute as @s[scores={timer=80,session1=1,session2=0,session3=0}] run function secret:session1
 execute as @s[scores={timer=80,session1=1,session2=1,session3=0}] run function secret:session2
 execute as @s[scores={timer=80,session1=1,session2=1,session3=1}] run function secret:session3
-execute as @s[scores={timer=80}] run execute at @e[tag=countdown] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
+execute at @s[scores={timer=80}] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
 execute as @s[scores={timer=80}] run tag @s remove countdown
 execute as @s[scores={timer=80}] run scoreboard players set @s timer 0

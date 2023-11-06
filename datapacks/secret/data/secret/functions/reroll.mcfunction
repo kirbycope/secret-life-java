@@ -9,6 +9,6 @@ execute as @s[scores={timer=60}] run title @s title "§cAccept your fate"
 execute as @s[scores={timer=80,s1fail=0,s1success=0},tag=session1] run function secret:reroll1
 execute as @s[scores={timer=80,s2fail=0,s2success=0},tag=session2] run function secret:reroll2
 execute as @s[scores={timer=80,s3fail=0,s3success=0},tag=session3] run function secret:reroll3
-execute as @s[scores={timer=80}] run execute at @e[tag=countdown] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
+execute at @s[scores={timer=80}] run particle totem_of_undying ~ ~ ~ 0 2 0 .5 100
 execute as @s[scores={timer=80}] run tag @s remove reroll
 execute as @s[scores={timer=80}] run scoreboard players set @s timer 0
