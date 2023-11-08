@@ -1,4 +1,5 @@
 gamerule commandBlockOutput false
+gamerule keepInventory true
 gamerule naturalRegeneration false 
 
 # World border centered around spawn
