@@ -65,5 +65,5 @@ execute as @a[tag=gift,scores={health=4}] run attribute @s generic.max_health ba
 execute as @a[tag=gift,scores={health=3}] run attribute @s generic.max_health base set 5
 execute as @a[tag=gift,scores={health=2}] run attribute @s generic.max_health base set 4
 execute as @a[tag=gift,scores={health=1}] run attribute @s generic.max_health base set 3
-execute as @a[tag=gift] run effect give @s instant_health 9 1
+execute as @a[tag=gift] run effect give @s instant_health 1 9
 execute as @a[tag=gift] run tag @s remove gift
