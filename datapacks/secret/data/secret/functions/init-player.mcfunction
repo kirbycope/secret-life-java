@@ -30,6 +30,7 @@ scoreboard players set @s s4success 0
 scoreboard players enable @s session1
 scoreboard players enable @s session2
 scoreboard players enable @s session3
+scoreboard players enable @s session4
 scoreboard players set @s timer 0
 
 # Give the player the starting item(s)
