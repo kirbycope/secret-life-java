@@ -6,7 +6,7 @@ execute as @s[scores={s3gift=0,session1=1, session2=1, session3=1, session4=0}] 
 execute as @s[scores={s3gift=0,session1=1, session2=1, session3=1, session4=0}] run scoreboard players set @p[tag=gift] s3gift 1
 execute as @s[scores={s4gift=0,session1=1, session2=1, session3=1, session4=1}] run tag @p[distance=0.1..] add gift
 execute as @s[scores={s4gift=0,session1=1, session2=1, session3=1, session4=1}] run scoreboard players set @p[tag=gift] s4gift 1
-execute as @a[tag=gift] run title @p[tag=gift] title "You're been gifted a heart"
+execute as @a[tag=gift] run title @p[tag=gift] title "Received a heart"
 execute as @a[tag=gift,scores={health=58..}] run attribute @p[tag=gift] generic.max_health base set 60
 execute as @a[tag=gift,scores={health=57}] run attribute @p[tag=gift] generic.max_health base set 59
 execute as @a[tag=gift,scores={health=56}] run attribute @p[tag=gift] generic.max_health base set 58
@@ -65,5 +65,5 @@ execute as @a[tag=gift,scores={health=4}] run attribute @p[tag=gift] generic.max
 execute as @a[tag=gift,scores={health=3}] run attribute @p[tag=gift] generic.max_health base set 5
 execute as @a[tag=gift,scores={health=2}] run attribute @p[tag=gift] generic.max_health base set 4
 execute as @a[tag=gift,scores={health=1}] run attribute @p[tag=gift] generic.max_health base set 3
-effect give @p[tag=gift] minecraft:instant_health 1 1 true
+effect give @a[tag=gift] minecraft:instant_health 1 1 true
 execute as @p[tag=gift] run tag @p[tag=gift] remove gift
