@@ -3,7 +3,7 @@ tag @s add init
 
 # 30 Hearts
 attribute @s minecraft:generic.max_health base set 60
-effect give @s minecraft:instant_health 10 0 true
+effect give @s minecraft:instant_health 10 1 true
 
 # Team green (0 deaths)
 team join green @s
