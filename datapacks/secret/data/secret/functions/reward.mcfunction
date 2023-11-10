@@ -104,7 +104,7 @@ execute as @s[scores={timer=60,health=4},tag=20hearts] run attribute @s generic.
 execute as @s[scores={timer=60,health=3},tag=20hearts] run attribute @s generic.max_health base set 43
 execute as @s[scores={timer=60,health=2},tag=20hearts] run attribute @s generic.max_health base set 42
 execute as @s[scores={timer=60,health=1},tag=20hearts] run attribute @s generic.max_health base set 41
-execute as @s[scores={timer=60},tag=20hearts] run effect give @s minecraft:instant_health 10 0 true
+execute as @s[scores={timer=60},tag=20hearts] run effect give @s minecraft:instant_health 10 1 true
 
 # Announce hearts, up to 10 more
 execute as @s[scores={timer=60,health=58..59}] run title @s title "§a+1 Hearts"
@@ -159,7 +159,7 @@ execute as @s[scores={timer=60,health=4},tag=10hearts] run attribute @s generic.
 execute as @s[scores={timer=60,health=3},tag=10hearts] run attribute @s generic.max_health base set 23
 execute as @s[scores={timer=60,health=2},tag=10hearts] run attribute @s generic.max_health base set 22
 execute as @s[scores={timer=60,health=1},tag=10hearts] run attribute @s generic.max_health base set 21
-execute as @s[scores={timer=60},tag=10hearts] run effect give @s minecraft:instant_health 5 0 true
+execute as @s[scores={timer=60},tag=10hearts] run effect give @s minecraft:instant_health 5 1 true
 
 execute as @s[scores={timer=60}] run tag @s remove reward
 execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
