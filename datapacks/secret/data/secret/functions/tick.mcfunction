@@ -23,8 +23,11 @@ execute as @e[tag=countdown] run function secret:countdown
 # Fail
 execute as @e[tag=fail] run function secret:fail
 
-# Hearts
-execute as @a run function secret:hearts
+# Give hearts
+execute as @e[tag=gift] run function secret:give
+
+# Set max hearts
+execute as @a[tag=!gift] run function secret:hearts
 
 # Reroll
 execute as @e[tag=reroll] run function secret:reroll
