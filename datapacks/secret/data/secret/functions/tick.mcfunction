@@ -16,6 +16,8 @@ execute at @e[scores={session3=1}] as @a run trigger session3 set 1
 execute as @e[scores={session3=1},tag=!session3] run tag @s add countdown
 execute at @e[scores={session4=1}] as @a run trigger session4 set 1
 execute as @e[scores={session4=1},tag=!session4] run tag @s add countdown
+execute at @e[scores={session5=1}] as @a run trigger session5 set 1
+execute as @e[scores={session5=1},tag=!session5] run tag @s add countdown
 
 # Countdown
 execute as @e[tag=countdown] run function secret:countdown
