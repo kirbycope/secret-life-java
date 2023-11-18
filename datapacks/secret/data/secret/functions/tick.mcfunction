@@ -29,7 +29,7 @@ execute as @e[tag=fail] run function secret:fail
 execute as @e[tag=gift] run function secret:give
 
 # Set max hearts
-execute as @a[tag=!gift] run function secret:hearts
+execute as @a[tag=!gift,tag=!reward] run function secret:hearts
 
 # Reroll
 execute as @e[tag=reroll] run function secret:reroll
