@@ -9,7 +9,7 @@ effect give @s minecraft:instant_health 1 9 true
 team join green @s
 
 # Init scoreboard(s)
-#scoreboard players set @s deaths 0
+scoreboard players set @s deaths 0
 #scoreboard players set @s health 60
 scoreboard players set @s s1fail 0
 scoreboard players set @s s1gift 0

@@ -1,6 +1,7 @@
 gamerule commandBlockOutput false
 gamerule keepInventory true
-gamerule naturalRegeneration false 
+gamerule naturalRegeneration false
+gamerule sendCommandFeedback false
 
 # World border centered around spawn
 worldborder center -423 -406

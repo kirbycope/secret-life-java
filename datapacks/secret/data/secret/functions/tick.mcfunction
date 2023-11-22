@@ -19,6 +19,10 @@ execute as @e[scores={session4=1},tag=!session4] run tag @s add countdown
 execute at @e[scores={session5=1}] as @a run trigger session5 set 1
 execute as @e[scores={session5=1},tag=!session5] run tag @s add countdown
 
+# Spawn protection
+execute positioned -422 66 -406 run gamemode adventure @a[distance=0..20,scores={deaths=..2}]
+execute positioned -422 66 -406 run gamemode survival @a[distance=21..,scores={deaths=..2}]
+
 # Countdown
 execute as @e[tag=countdown] run function secret:countdown
 
