@@ -162,4 +162,6 @@ execute as @s[scores={timer=60,health=1},tag=10hearts] run attribute @s generic.
 execute as @s[scores={timer=60},tag=10hearts] run effect give @s minecraft:instant_health 1 5 true
 
 execute as @s[scores={timer=60}] run tag @s remove reward
+execute as @s[scores={timer=60}] run tag @s remove 10hearts
+execute as @s[scores={timer=60}] run tag @s remove 20hearts
 execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
