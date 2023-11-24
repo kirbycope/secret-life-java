@@ -31,11 +31,16 @@ scoreboard players set @s s5fail 0
 scoreboard players set @s s5gift 0
 scoreboard players set @s s5reroll 0
 scoreboard players set @s s5success 0
+scoreboard players set @s s6fail 0
+scoreboard players set @s s6gift 0
+scoreboard players set @s s6reroll 0
+scoreboard players set @s s6success 0
 scoreboard players enable @s session1
 scoreboard players enable @s session2
 scoreboard players enable @s session3
 scoreboard players enable @s session4
 scoreboard players enable @s session5
+scoreboard players enable @s session6
 scoreboard players set @s timer 0
 
 # Give the player the starting item(s)
@@ -44,3 +49,4 @@ give @s written_book{display:{Name:'{"text":"Start Session 2"}',Lore:['{"text":"
 give @s written_book{display:{Name:'{"text":"Start Session 3"}',Lore:['{"text":"Start Session 3"}']},title:"Start Session 3",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 3","clickEvent":{"action":"run_command","value":"/trigger session3 add 1"}}']}
 give @s written_book{display:{Name:'{"text":"Start Session 4"}',Lore:['{"text":"Start Session 4"}']},title:"Start Session 4",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 4","clickEvent":{"action":"run_command","value":"/trigger session4 add 1"}}']}
 give @s written_book{display:{Name:'{"text":"Start Session 5"}',Lore:['{"text":"Start Session 5"}']},title:"Start Session 5",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 5","clickEvent":{"action":"run_command","value":"/trigger session5 add 1"}}']}
+give @s written_book{display:{Name:'{"text":"Start Session 6"}',Lore:['{"text":"Start Session 6"}']},title:"Start Session 6",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 6","clickEvent":{"action":"run_command","value":"/trigger session6 add 1"}}']}
