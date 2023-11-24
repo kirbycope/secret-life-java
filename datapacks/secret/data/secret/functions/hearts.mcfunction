@@ -1,58 +1,62 @@
-# 29 Hearts
+execute as @s[scores={health=62}] run attribute @s generic.max_health base set 62
+execute as @s[scores={health=61}] run attribute @s generic.max_health base set 61
+execute as @s[scores={health=60}] run attribute @s generic.max_health base set 60
+execute as @s[scores={health=59}] run attribute @s generic.max_health base set 59
 execute as @s[scores={health=58}] run attribute @s generic.max_health base set 58
-# 28 Hearts
+execute as @s[scores={health=57}] run attribute @s generic.max_health base set 57
 execute as @s[scores={health=56}] run attribute @s generic.max_health base set 56
-# 27 Hearts
+execute as @s[scores={health=55}] run attribute @s generic.max_health base set 55
 execute as @s[scores={health=54}] run attribute @s generic.max_health base set 54
-# 26 Hearts
+execute as @s[scores={health=53}] run attribute @s generic.max_health base set 53
 execute as @s[scores={health=52}] run attribute @s generic.max_health base set 52
-# 25 Hearts
+execute as @s[scores={health=51}] run attribute @s generic.max_health base set 51
 execute as @s[scores={health=50}] run attribute @s generic.max_health base set 50
-# 24 Hearts
+execute as @s[scores={health=49}] run attribute @s generic.max_health base set 49
 execute as @s[scores={health=48}] run attribute @s generic.max_health base set 48
-# 23 Hearts
+execute as @s[scores={health=47}] run attribute @s generic.max_health base set 47
 execute as @s[scores={health=46}] run attribute @s generic.max_health base set 46
-# 22 Hearts
+execute as @s[scores={health=45}] run attribute @s generic.max_health base set 45
 execute as @s[scores={health=44}] run attribute @s generic.max_health base set 44
-# 21 Hearts
+execute as @s[scores={health=43}] run attribute @s generic.max_health base set 43
 execute as @s[scores={health=42}] run attribute @s generic.max_health base set 42
-# 20 Hearts
+execute as @s[scores={health=41}] run attribute @s generic.max_health base set 41
 execute as @s[scores={health=40}] run attribute @s generic.max_health base set 40
-# 19 Hearts
+execute as @s[scores={health=39}] run attribute @s generic.max_health base set 39
 execute as @s[scores={health=38}] run attribute @s generic.max_health base set 38
-# 18 Hearts
+execute as @s[scores={health=37}] run attribute @s generic.max_health base set 37
 execute as @s[scores={health=36}] run attribute @s generic.max_health base set 36
-# 17 Hearts
+execute as @s[scores={health=35}] run attribute @s generic.max_health base set 35
 execute as @s[scores={health=34}] run attribute @s generic.max_health base set 34
-# 16 Hearts
+execute as @s[scores={health=33}] run attribute @s generic.max_health base set 33
 execute as @s[scores={health=32}] run attribute @s generic.max_health base set 32
-# 15 Hearts
+execute as @s[scores={health=31}] run attribute @s generic.max_health base set 31
 execute as @s[scores={health=30}] run attribute @s generic.max_health base set 30
-# 14 Hearts
+execute as @s[scores={health=39}] run attribute @s generic.max_health base set 29
 execute as @s[scores={health=28}] run attribute @s generic.max_health base set 28
-# 13 Hearts
+execute as @s[scores={health=27}] run attribute @s generic.max_health base set 27
 execute as @s[scores={health=26}] run attribute @s generic.max_health base set 26
-# 12 Hearts
+execute as @s[scores={health=25}] run attribute @s generic.max_health base set 25
 execute as @s[scores={health=24}] run attribute @s generic.max_health base set 24
-# 11 Hearts
+execute as @s[scores={health=23}] run attribute @s generic.max_health base set 23
 execute as @s[scores={health=22}] run attribute @s generic.max_health base set 22
-# 10 Hearts
+execute as @s[scores={health=21}] run attribute @s generic.max_health base set 21
 execute as @s[scores={health=20}] run attribute @s generic.max_health base set 20
-# 9 Hearts
+execute as @s[scores={health=19}] run attribute @s generic.max_health base set 19
 execute as @s[scores={health=18}] run attribute @s generic.max_health base set 18
-# 8 Hearts
+execute as @s[scores={health=17}] run attribute @s generic.max_health base set 17
 execute as @s[scores={health=16}] run attribute @s generic.max_health base set 16
-# 7 Hearts
+execute as @s[scores={health=15}] run attribute @s generic.max_health base set 15
 execute as @s[scores={health=14}] run attribute @s generic.max_health base set 14
-# 6 Hearts
+execute as @s[scores={health=13}] run attribute @s generic.max_health base set 13
 execute as @s[scores={health=12}] run attribute @s generic.max_health base set 12
-# 5 Hearts
+execute as @s[scores={health=11}] run attribute @s generic.max_health base set 11
 execute as @s[scores={health=10}] run attribute @s generic.max_health base set 10
-# 4 Hearts
+execute as @s[scores={health=9}] run attribute @s generic.max_health base set 9
 execute as @s[scores={health=8}] run attribute @s generic.max_health base set 8
-# 3 Hearts
+execute as @s[scores={health=7}] run attribute @s generic.max_health base set 7
 execute as @s[scores={health=6}] run attribute @s generic.max_health base set 6
-# 2 Hearts
+execute as @s[scores={health=5}] run attribute @s generic.max_health base set 5
 execute as @s[scores={health=4}] run attribute @s generic.max_health base set 4
-# 1 Hearts
+execute as @s[scores={health=3}] run attribute @s generic.max_health base set 3
 execute as @s[scores={health=2}] run attribute @s generic.max_health base set 2
+execute as @s[scores={health=1}] run attribute @s generic.max_health base set 1
