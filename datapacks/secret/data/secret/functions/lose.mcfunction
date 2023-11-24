@@ -1,4 +1,27 @@
-# Determine health and lower by 20 (lowest value being 1)
+# Announce hearts, up to 10 less
+title @s[scores={health=21..}] title "§c-10 Hearts"
+title @s[scores={health=20}] title "§c-9.5 Hearts"
+title @s[scores={health=19}] title "§c-9 Hearts"
+title @s[scores={health=18}] title "§c-8.5 Hearts"
+title @s[scores={health=17}] title "§c-8 Hearts"
+title @s[scores={health=16}] title "§c-7.5 Hearts"
+title @s[scores={health=15}] title "§c-7 Hearts"
+title @s[scores={health=14}] title "§c-6.5 Hearts"
+title @s[scores={health=13}] title "§c-6 Hearts"
+title @s[scores={health=12}] title "§c-5.5 Hearts"
+title @s[scores={health=11}] title "§c-5 Hearts"
+title @s[scores={health=10}] title "§c-4.5 Hearts"
+title @s[scores={health=9}] title "§c-4 Hearts"
+title @s[scores={health=8}] title "§c-3.5 Hearts"
+title @s[scores={health=7}] title "§c-3 Hearts"
+title @s[scores={health=6}] title "§c-2.5 Hearts"
+title @s[scores={health=5}] title "§c-2 Hearts"
+title @s[scores={health=4}] title "§c-1.5 Hearts"
+title @s[scores={health=3}] title "§c-1 Hearts"
+title @s[scores={health=2}] title "§c-.5 Hearts"
+title @s[scores={health=1}] title "§c-0 Hearts"
+
+# Decrease max health, leaving 1/2 heart at the minimum
 attribute @s[scores={health=62}] generic.max_health base set 42
 attribute @s[scores={health=61}] generic.max_health base set 41
 attribute @s[scores={health=60}] generic.max_health base set 40

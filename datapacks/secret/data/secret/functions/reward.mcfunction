@@ -118,7 +118,7 @@ execute as @s[scores={timer=60,health=44..45}] run title @s title "§a+8 Hearts"
 execute as @s[scores={timer=60,health=42..43}] run title @s title "§a+9 Hearts"
 execute as @s[scores={timer=60,health=40..41}] run title @s title "§a+10 Hearts"
 
-# Increase max health, up to 10 more hearts (player rerolled)
+# Increase max health, up to 10 more hearts
 execute as @s[scores={timer=60,health=40},tag=10hearts] run attribute @s generic.max_health base set 60
 execute as @s[scores={timer=60,health=39},tag=10hearts] run attribute @s generic.max_health base set 59
 execute as @s[scores={timer=60,health=38},tag=10hearts] run attribute @s generic.max_health base set 58
