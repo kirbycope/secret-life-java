@@ -16,6 +16,5 @@ execute as @s[scores={timer=60,s4fail=0,s4success=0},tag=session4] run function 
 execute as @s[scores={timer=60,s5fail=0,s5success=0},tag=session5] run function secret:success5
 execute as @s[scores={timer=60,s6fail=0,s6success=0},tag=session6] run function secret:success6
 execute as @s[scores={timer=60}] run tag @s add reward
-execute as @s[scores={timer=60}] run tag @s remove redtask
 execute as @s[scores={timer=60}] run tag @s remove success
 execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
