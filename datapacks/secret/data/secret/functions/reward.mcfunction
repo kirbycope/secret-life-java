@@ -72,17 +72,14 @@ execute as @s[scores={timer=50},tag=20hearts] run summon item -423 70 -406 {Item
 execute as @s[scores={timer=50},tag=20hearts] run playsound minecraft:entity.item.pickup ambient @a -423 70 -406
 
 # Increase max health, up to 20 more hearts (re-rolled task)
-execute as @s[scores={timer=60},tag=20hearts] run function secret:hearts-20
+execute as @s[scores={timer=60},tag=20hearts] run function secret:hearts/gain/20
 
 # Increase max health, up to 10 more hearts (green/yellow task)
-execute as @s[scores={timer=60},tag=10hearts] run function secret:hearts-10
+execute as @s[scores={timer=60},tag=10hearts] run function secret:hearts/gain/10
 
 # Increase max health, up to 5 more hearts (red task)
-execute as @s[scores={timer=60},tag=5hearts] run function secret:hearts-5
+execute as @s[scores={timer=60},tag=5hearts] run function secret:hearts/gain/5
 
 execute as @s[scores={timer=60}] run tag @s remove redtask
 execute as @s[scores={timer=60}] run tag @s remove reward
-execute as @s[scores={timer=60}] run tag @s remove 5hearts
-execute as @s[scores={timer=60}] run tag @s remove 10hearts
-execute as @s[scores={timer=60}] run tag @s remove 20hearts
 execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
