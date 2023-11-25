@@ -23,5 +23,5 @@ execute as @s[scores={timer=60,s3fail=0,s3success=0},tag=session3] run function 
 execute as @s[scores={timer=60,s4fail=0,s4success=0},tag=session4] run function secret:fail4
 execute as @s[scores={timer=60,s5fail=0,s5success=0},tag=session5] run function secret:fail5
 execute as @s[scores={timer=60,s6fail=0,s6success=0},tag=session6] run function secret:fail6
-execute as @s[scores={timer=60}] run tag @s remove fail
-execute as @s[scores={timer=60}] run scoreboard players set @s timer 0
+execute as @s[scores={timer=80}] run tag @s remove fail
+execute as @s[scores={timer=80}] run scoreboard players set @s timer 0
