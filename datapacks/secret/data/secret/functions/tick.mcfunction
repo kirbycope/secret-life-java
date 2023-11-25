@@ -7,19 +7,22 @@ execute as @e[scores={deaths=1},tag=!death1] run function secret:yellow
 execute as @e[scores={deaths=2},tag=!death2] run function secret:red
 execute as @a[scores={deaths=3..}] run gamemode spectator @s
 
+# Red Tasks
+execute as @e[scores={deaths=2},tag=!redtask] run tag @s add countdown
+
 # Trigger Session
-execute at @e[scores={session1=1}] as @a run trigger session1 set 1
-execute as @e[scores={session1=1},tag=!session1] run tag @s add countdown
-execute at @e[scores={session2=1}] as @a run trigger session2 set 1
-execute as @e[scores={session2=1},tag=!session2] run tag @s add countdown
-execute at @e[scores={session3=1}] as @a run trigger session3 set 1
-execute as @e[scores={session3=1},tag=!session3] run tag @s add countdown
-execute at @e[scores={session4=1}] as @a run trigger session4 set 1
-execute as @e[scores={session4=1},tag=!session4] run tag @s add countdown
-execute at @e[scores={session5=1}] as @a run trigger session5 set 1
-execute as @e[scores={session5=1},tag=!session5] run tag @s add countdown
-execute at @e[scores={session6=1}] as @a run trigger session6 set 1
-execute as @e[scores={session6=1},tag=!session6] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session1=1}] as @a run trigger session1 set 1
+execute as @e[scores={deaths=0..1,session1=1},tag=!session1] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session2=1}] as @a run trigger session2 set 1
+execute as @e[scores={deaths=0..1,session2=1},tag=!session2] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session3=1}] as @a run trigger session3 set 1
+execute as @e[scores={deaths=0..1,session3=1},tag=!session3] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session4=1}] as @a run trigger session4 set 1
+execute as @e[scores={deaths=0..1,session4=1},tag=!session4] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session5=1}] as @a run trigger session5 set 1
+execute as @e[scores={deaths=0..1,session5=1},tag=!session5] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session6=1}] as @a run trigger session6 set 1
+execute as @e[scores={deaths=0..1,session6=1},tag=!session6] run tag @s add countdown
 
 # Spawn protection
 execute positioned -422 66 -406 run gamemode adventure @a[distance=0..20,scores={deaths=..2}]
