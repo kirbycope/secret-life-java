@@ -63,6 +63,6 @@ execute as @s[scores={health=2}] run attribute @s generic.max_health base set 12
 execute as @s[scores={health=1}] run attribute @s generic.max_health base set 11
 
 # Heal the player
-effect give @s minecraft:instant_health 1 5 true
+effect give @s minecraft:instant_health 5 1 true
 
 tag @s remove 5hearts
