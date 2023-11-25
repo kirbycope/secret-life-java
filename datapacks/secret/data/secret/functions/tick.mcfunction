@@ -47,7 +47,7 @@ execute as @e[tag=reward] run function secret:reward
 execute as @e[tag=success] run function secret:success
 
 # Set max hearts
-execute as @a[scores={timer=0}] run function secret:hearts/set
+execute as @a[scores={timer=0},tag=!gift] run function secret:hearts/set
 
 # Increment timer if running
 execute as @e[scores={timer=1..}] run scoreboard players add @s timer 1
