@@ -37,9 +37,6 @@ execute as @e[tag=fail] run function secret:fail
 # Give hearts
 execute as @e[tag=gift] run function secret:give
 
-# Set max hearts
-execute as @a[tag=!gift,tag=!reward] run function secret:hearts
-
 # Reroll
 execute as @e[tag=reroll] run function secret:reroll
 
@@ -48,6 +45,9 @@ execute as @e[tag=reward] run function secret:reward
 
 # Success
 execute as @e[tag=success] run function secret:success
+
+# Set max hearts
+execute as @a[tag=!gift,tag=!reward] run function secret:hearts
 
 # Increment timer if running
 execute as @e[scores={timer=1..}] run scoreboard players add @s timer 1
