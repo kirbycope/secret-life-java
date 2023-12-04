@@ -23,6 +23,8 @@ execute at @e[scores={deaths=0..1,session5=1}] as @a run trigger session5 set 1
 execute as @e[scores={deaths=0..1,session5=1},tag=!session5] run tag @s add countdown
 execute at @e[scores={deaths=0..1,session6=1}] as @a run trigger session6 set 1
 execute as @e[scores={deaths=0..1,session6=1},tag=!session6] run tag @s add countdown
+execute at @e[scores={deaths=0..1,session7=1}] as @a run trigger session7 set 1
+execute as @e[scores={deaths=0..1,session7=1},tag=!session7] run tag @s add countdown
 
 # Spawn protection
 execute positioned -422 66 -406 run gamemode adventure @a[distance=0..20,scores={deaths=..2}]

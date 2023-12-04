@@ -5,6 +5,7 @@ execute as @s[scores={timer=0,s3fail=0,s3success=0},tag=session3] run tag @s add
 execute as @s[scores={timer=0,s4fail=0,s4success=0},tag=session4] run tag @s add fail
 execute as @s[scores={timer=0,s5fail=0,s5success=0},tag=session5] run tag @s add fail
 execute as @s[scores={timer=0,s6fail=0,s6success=0},tag=session6] run tag @s add fail
+execute as @s[scores={timer=0,s7fail=0,s7success=0},tag=session7] run tag @s add fail
 execute as @s[scores={timer=0},tag=fail] run scoreboard players set @s timer 1
 execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 -427 76 -404 0.1 0.1 0.1 0.5 8 normal
 execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 -427 77.5 -405 0.1 0.1 0.1 0.5 8 normal
@@ -23,6 +24,7 @@ execute as @s[scores={timer=60,s3fail=0,s3success=0},tag=session3] run function 
 execute as @s[scores={timer=60,s4fail=0,s4success=0},tag=session4] run function secret:fail4
 execute as @s[scores={timer=60,s5fail=0,s5success=0},tag=session5] run function secret:fail5
 execute as @s[scores={timer=60,s6fail=0,s6success=0},tag=session6] run function secret:fail6
+execute as @s[scores={timer=60,s7fail=0,s7success=0},tag=session7] run function secret:fail7
 execute as @s[scores={timer=80}] run tag @s remove fail
 execute as @s[scores={timer=80}] run tag @s remove redtask
 execute as @s[scores={timer=80}] run scoreboard players set @s timer 0
