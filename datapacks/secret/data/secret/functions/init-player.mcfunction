@@ -35,6 +35,10 @@ scoreboard players set @s s6fail 0
 scoreboard players set @s s6gift 0
 scoreboard players set @s s6reroll 0
 scoreboard players set @s s6success 0
+scoreboard players set @s s7fail 0
+scoreboard players set @s s7gift 0
+scoreboard players set @s s7reroll 0
+scoreboard players set @s s7success 0
 scoreboard players enable @s session1
 scoreboard players enable @s session2
 scoreboard players enable @s session3
