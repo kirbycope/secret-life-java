@@ -39,6 +39,14 @@ scoreboard players set @s s7fail 0
 scoreboard players set @s s7gift 0
 scoreboard players set @s s7reroll 0
 scoreboard players set @s s7success 0
+scoreboard players set @s s8fail 0
+scoreboard players set @s s8gift 0
+scoreboard players set @s s8reroll 0
+scoreboard players set @s s8success 0
+scoreboard players set @s s9fail 0
+scoreboard players set @s s9gift 0
+scoreboard players set @s s9reroll 0
+scoreboard players set @s s9success 0
 scoreboard players enable @s session1
 scoreboard players enable @s session2
 scoreboard players enable @s session3
@@ -46,6 +54,8 @@ scoreboard players enable @s session4
 scoreboard players enable @s session5
 scoreboard players enable @s session6
 scoreboard players enable @s session7
+scoreboard players enable @s session8
+scoreboard players enable @s session9
 scoreboard players set @s timer 0
 
 # Give the player the starting item(s)
@@ -56,3 +66,5 @@ give @s written_book{display:{Name:'{"text":"Start Session 4"}',Lore:['{"text":"
 give @s written_book{display:{Name:'{"text":"Start Session 5"}',Lore:['{"text":"Start Session 5"}']},title:"Start Session 5",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 5","clickEvent":{"action":"run_command","value":"/trigger session5 add 1"}}']}
 give @s written_book{display:{Name:'{"text":"Start Session 6"}',Lore:['{"text":"Start Session 6"}']},title:"Start Session 6",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 6","clickEvent":{"action":"run_command","value":"/trigger session6 add 1"}}']}
 give @s written_book{display:{Name:'{"text":"Start Session 7"}',Lore:['{"text":"Start Session 7"}']},title:"Start Session 7",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 7","clickEvent":{"action":"run_command","value":"/trigger session7 add 1"}}']}
+give @s written_book{display:{Name:'{"text":"Start Session 8"}',Lore:['{"text":"Start Session 8"}']},title:"Start Session 8",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 8","clickEvent":{"action":"run_command","value":"/trigger session8 add 1"}}']}
+give @s written_book{display:{Name:'{"text":"Start Session 9"}',Lore:['{"text":"Start Session 9"}']},title:"Start Session 9",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 9","clickEvent":{"action":"run_command","value":"/trigger session9 add 1"}}']}
