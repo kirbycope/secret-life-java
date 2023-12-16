@@ -68,3 +68,5 @@ team modify yellow friendlyFire false
 team add red
 team modify red color red
 team modify red friendlyFire true
+team add gray
+team modify gray color gray

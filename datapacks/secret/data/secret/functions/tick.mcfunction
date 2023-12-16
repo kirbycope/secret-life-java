@@ -5,7 +5,7 @@ execute as @a[tag=!init] run function secret:init-player
 execute as @e[scores={deaths=0}] run team add green
 execute as @e[scores={deaths=1},tag=!death1] run function secret:yellow
 execute as @e[scores={deaths=2},tag=!death2] run function secret:red
-execute as @a[scores={deaths=3..}] run gamemode spectator @s
+execute as @a[scores={deaths=3..},tag=!death3] run function secret:gray
 
 # Red Tasks
 execute as @e[scores={deaths=2},tag=!redtask] run tag @s add countdown
