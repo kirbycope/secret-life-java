@@ -53,7 +53,7 @@ execute as @s[scores={timer=45,health=44..},tag=!5hearts] run playsound minecraf
 
 # Player has 21+ hearts
 execute as @s[scores={timer=50,health=42..},tag=10hearts] run summon item -423 70 -406 {Item:{id:"minecraft:iron_horse_armor",Count:1b}}
-execute as @s[scores={timer=50,health=42..},tag=20hearts] run summon item -423 70 -406 {Item:{id:"minecraft:gold_horse_armor",Count:1b}}
+execute as @s[scores={timer=50,health=42..},tag=20hearts] run summon item -423 70 -406 {Item:{id:"minecraft:golden_horse_armor",Count:1b}}
 execute as @s[scores={timer=50,health=42..},tag=!5hearts] run playsound minecraft:entity.item.pickup ambient @a -423 70 -406
 
 # Increase max health, up to 20 more hearts (re-rolled task)
