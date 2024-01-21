@@ -57,14 +57,3 @@ scoreboard players enable @s session7
 scoreboard players enable @s session8
 scoreboard players enable @s session9
 scoreboard players set @s timer 0
-
-# Give the player the starting item(s)
-give @s written_book{display:{Name:'{"text":"Start Session 1"}',Lore:['{"text":"Start Session 1"}']},title:"Start Session 1",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 1","clickEvent":{"action":"run_command","value":"/trigger session1 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 2"}',Lore:['{"text":"Start Session 2"}']},title:"Start Session 2",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 2","clickEvent":{"action":"run_command","value":"/trigger session2 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 3"}',Lore:['{"text":"Start Session 3"}']},title:"Start Session 3",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 3","clickEvent":{"action":"run_command","value":"/trigger session3 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 4"}',Lore:['{"text":"Start Session 4"}']},title:"Start Session 4",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 4","clickEvent":{"action":"run_command","value":"/trigger session4 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 5"}',Lore:['{"text":"Start Session 5"}']},title:"Start Session 5",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 5","clickEvent":{"action":"run_command","value":"/trigger session5 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 6"}',Lore:['{"text":"Start Session 6"}']},title:"Start Session 6",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 6","clickEvent":{"action":"run_command","value":"/trigger session6 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 7"}',Lore:['{"text":"Start Session 7"}']},title:"Start Session 7",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 7","clickEvent":{"action":"run_command","value":"/trigger session7 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 8"}',Lore:['{"text":"Start Session 8"}']},title:"Start Session 8",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 8","clickEvent":{"action":"run_command","value":"/trigger session8 add 1"}}']}
-give @s written_book{display:{Name:'{"text":"Start Session 9"}',Lore:['{"text":"Start Session 9"}']},title:"Start Session 9",author:"Secret Keeper",generation:0,pages:['{"text":"Start Session 9","clickEvent":{"action":"run_command","value":"/trigger session9 add 1"}}']}
